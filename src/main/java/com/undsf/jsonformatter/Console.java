@@ -27,7 +27,7 @@ public class Console {
             int index = fileContent.indexOf('{');
             String jsonContent = (index>0) ? fileContent.substring(index) : fileContent;
             //System.out.println("格式化前：\n" + jsonContent);
-            String jsonFormatted = Formatter.format(jsonContent);
+            String jsonFormatted = Formatter.format(jsonContent, 4);
             System.out.println("格式化后：\n" + jsonFormatted);
         }
         catch (IOException e){
